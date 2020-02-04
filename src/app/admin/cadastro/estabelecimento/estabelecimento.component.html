@@ -1,0 +1,63 @@
+<div class="container">
+    <h1>Cadastro de Estabelecimento</h1>
+    <mat-card>
+        <form action="" class="wrapper-form">
+            <mat-form-field>
+                <input matInput placeholder="Nome" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Razão Social" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="CNPJ" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Endereço" type="text">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Celular" type="tel">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="E-mail" type="email">
+            </mat-form-field>
+
+            <h4>Formas de pagamento</h4>
+            <mat-form-field>
+                <mat-label>- Selecione -</mat-label>
+                <mat-select>
+                    <mat-option value="Dinheiro">Dinheiro</mat-option>
+                    <mat-option value="Crédito">Cartão de crédito</mat-option>
+                    <mat-option value="Débito">Cartão de débito</mat-option>
+                    <mat-option value="Todas opções">Todas opções</mat-option>
+                </mat-select>
+            </mat-form-field>
+            
+            
+            <h4>Usuários vinculados</h4>
+            <mat-checkbox>José Augusto</mat-checkbox>
+            <mat-checkbox>Paulo Araújo</mat-checkbox>
+            <mat-checkbox>Sabrina Santos</mat-checkbox>
+            <mat-checkbox>Amanda dos Reis</mat-checkbox>
+            <mat-checkbox>Claudemir Soares</mat-checkbox>
+
+            <br>
+            
+            <h4>Status</h4>
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="Ativo" style="margin-right: 15px;">Ativo</mat-radio-button>
+                <mat-radio-button value="Inativo">Inativo</mat-radio-button>
+            </mat-radio-group>
+
+            <br><br>
+
+            <button mat-raised-button color="primary">Adicionar</button>
+
+        </form>
+    </mat-card>
+    <br><br>
+</div>
