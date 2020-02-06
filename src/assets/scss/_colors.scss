@@ -1,0 +1,11 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+$cor-destaque: mat-palette($mat-red);
+$cor-secundaria: mat-palette($mat-red);
+$cor-terciaria: mat-palette($mat-red);
+
+$my-theme: mat-light-theme($cor-destaque, $cor-secundaria, $cor-terciaria);
+
+@include angular-material-theme($my-theme);

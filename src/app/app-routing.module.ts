@@ -8,8 +8,10 @@ import { EntregadorComponent } from './admin/cadastro/entregador/entregador.comp
 import { ProdutoComponent } from './admin/cadastro/produto/produto.component';
 import { PedidosComponent } from './admin/gestao/pedidos/pedidos.component';
 import { EntregasComponent } from './admin/gestao/entregas/entregas.component';
-import { RelatoriosComponent } from './admin/relatorios/relatorios.component';
 import { RastrearEntregasComponent } from './admin/gestao/rastrear-entregas/rastrear-entregas.component';
+import { EstabelecimentosComponent } from './admin/relatorios/estabelecimentos/estabelecimentos.component';
+import { EntregadoresComponent } from './admin/relatorios/entregadores/entregadores.component';
+import { ProdutosComponent } from './admin/relatorios/produtos/produtos.component';
 
 
 const appRoutes: Routes = [
@@ -25,8 +27,12 @@ const appRoutes: Routes = [
         { path: 'cadastro-produto', component: ProdutoComponent },
         { path: 'gestao-pedidos', component: PedidosComponent },
         { path: 'gestao-entregas', component: EntregasComponent },
-        { path: 'relatorios', component: RelatoriosComponent },
         { path: 'rastrear-entregas', component: RastrearEntregasComponent },
+
+        { path: 'relatorio-estabelecimento', component: EstabelecimentosComponent },
+        { path: 'relatorio-entregador', component: EntregadoresComponent },
+        { path: 'relatorio-produto', component: ProdutosComponent },
+
 
         { path: '**', redirectTo: 'dashboard' },
     ] 

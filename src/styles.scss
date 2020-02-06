@@ -3,9 +3,12 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+@import './assets/scss/colors';
 @import './assets/scss/mixins';
 @import './assets/scss/classes';
 @import './assets/scss/menu';
 @import './assets/scss/dashboard';
 @import './assets/scss/common';
 @import './assets/scss/login';
+@import './assets/scss/pedidos';
+@import './assets/scss/rastrear-entregas';

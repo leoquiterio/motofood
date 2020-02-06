@@ -23,7 +23,6 @@ import { EntregadorComponent } from './admin/cadastro/entregador/entregador.comp
 import { ProdutoComponent } from './admin/cadastro/produto/produto.component';
 import { PedidosComponent } from './admin/gestao/pedidos/pedidos.component';
 import { EntregasComponent } from './admin/gestao/entregas/entregas.component';
-import { RelatoriosComponent } from './admin/relatorios/relatorios.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -33,6 +32,14 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { RastrearEntregasComponent } from './admin/gestao/rastrear-entregas/rastrear-entregas.component';
+import { EstabelecimentosComponent } from './admin/relatorios/estabelecimentos/estabelecimentos.component';
+import { EntregadoresComponent } from './admin/relatorios/entregadores/entregadores.component';
+import { ProdutosComponent } from './admin/relatorios/produtos/produtos.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatFileUploadModule } from 'angular-material-fileupload';
+import { AgmCoreModule } from '@agm/core';
+
+
 
 @NgModule({
   declarations: [
@@ -46,8 +53,10 @@ import { RastrearEntregasComponent } from './admin/gestao/rastrear-entregas/rast
     ProdutoComponent,
     PedidosComponent,
     EntregasComponent,
-    RelatoriosComponent,
     RastrearEntregasComponent,
+    EstabelecimentosComponent,
+    EntregadoresComponent,
+    ProdutosComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,7 +79,13 @@ import { RastrearEntregasComponent } from './admin/gestao/rastrear-entregas/rast
     MatRadioModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTableModule,    
+    MatFileUploadModule,
+    AgmCoreModule,
+    AgmCoreModule.forRoot({
+      apiKey: '',
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

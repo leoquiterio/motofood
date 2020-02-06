@@ -1,0 +1,43 @@
+.wrapper-produto-pedido {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    @include desktop {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .produtos {
+        ul {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            @include desktop {
+                align-items: flex-start;
+            }
+            li {
+                list-style: none;
+                width: calc(100%/3);
+                margin: 10px 15px;
+                overflow: hidden;
+                @include desktop {
+                    margin: 10px 0;
+                }
+
+                &:hover {
+                    img {
+                        border: solid 1px #333;
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                }
+                img {
+                    border: solid 1px #dedede;
+                    width: 100px;
+                    padding: 15px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
