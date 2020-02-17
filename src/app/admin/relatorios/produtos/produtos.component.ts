@@ -26,7 +26,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class ProdutosComponent implements OnInit {
 
-  displayedColumns: string[] = ['select', 'position', 'nome', 'preco', 'categoria', 'status'];
+  displayedColumns: string[] = ['edicao', 'position', 'nome', 'preco', 'categoria', 'status'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 

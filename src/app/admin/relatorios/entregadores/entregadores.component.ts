@@ -26,7 +26,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 export class EntregadoresComponent implements OnInit {
 
-  displayedColumns: string[] = ['select', 'position', 'nome', 'endereco', 'cnh'];
+  displayedColumns: string[] = ['edicao', 'position', 'nome', 'endereco', 'cnh'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 

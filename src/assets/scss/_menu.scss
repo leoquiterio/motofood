@@ -1,3 +1,5 @@
+@import "../scss/colors";
+
 .sidenav-container {
   height: 100%;
   .sidenav {
@@ -12,6 +14,10 @@
     }
   }
 
+  .logo-menu {
+    height: 250px !important;
+  }
+
   mat-nav-list {
     a {
       mat-icon {
@@ -19,6 +25,71 @@
       }
     }
   }
+
+  .mat-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu-usuario {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      position: relative;
+
+      .notificacao-usuario {
+        margin-right: 20px;
+        mat-icon {
+          width: auto;
+          font-size: 40px;
+          line-height: 60px;
+          cursor: pointer;
+        }
+      }
+
+      .dados-usuario {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        &:hover {
+          cursor: pointer;
+          .menu-suspenso {
+            display: block;
+          }
+        }
+
+        .foto-usuario {
+          margin-right: 10px;
+          width: 35px;
+          height: 35px;
+          background: #fff;
+          border-radius: 50%;
+        }
+
+        .menu-suspenso {
+          position: absolute;
+          background: #fff;
+          box-shadow: 0 0 10px #333;
+          border-radius: 3px;
+          display: none;
+          width: 100px;
+          li {
+            list-style: none;
+            a {
+              font-size: 14px;
+              text-decoration: none;
+              color: #333;
+              font-weight: bold;
+
+              &:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
-
-

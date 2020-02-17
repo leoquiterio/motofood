@@ -38,6 +38,8 @@ import { ProdutosComponent } from './admin/relatorios/produtos/produtos.componen
 import { MatTableModule } from '@angular/material/table';
 import { MatFileUploadModule } from 'angular-material-fileupload';
 import { AgmCoreModule } from '@agm/core';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 
 
@@ -83,6 +85,7 @@ import { AgmCoreModule } from '@agm/core';
     MatTableModule,    
     MatFileUploadModule,
     AgmCoreModule,
+    MatTabsModule,
     AgmCoreModule.forRoot({
       apiKey: '',
     })

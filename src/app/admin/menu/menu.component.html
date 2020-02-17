@@ -1,7 +1,9 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar class="logo-menu">
+      <img src="../../../assets/img/logotipo.jpg" />
+    </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item [routerLink]="['dashboard']">
         <mat-icon>view_week</mat-icon> Dashboard
@@ -10,7 +12,7 @@
         <mat-icon>domain_disabled</mat-icon> Estabelecimentos
       </a>
       <a mat-list-item [routerLink]="['relatorio-entregador']">
-        <mat-icon>motorcycle</mat-icon> Entregadores
+        <mat-icon>person_pin</mat-icon> Entregadores
       </a>
       <a mat-list-item [routerLink]="['relatorio-produto']">
         <mat-icon>add</mat-icon> Produtos
@@ -21,12 +23,6 @@
       <a mat-list-item [routerLink]="['gestao-entregas']">
         <mat-icon>motorcycle</mat-icon> Entregas
       </a>
-      <a mat-list-item [routerLink]="['rastrear-entregas']">
-        <mat-icon>motorcycle</mat-icon> Rastrear Entregas
-      </a>
-      <a mat-list-item [routerLink]="['']">
-        <mat-icon>input</mat-icon> Logout
-      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -35,7 +31,18 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>MotoFood</span>
+      <span>Delivery Já</span>
+      <div class="menu-usuario">
+        <div class="notificacao-usuario">	<mat-icon>announcement</mat-icon></div>
+        <div class="dados-usuario">
+          <div class="foto-usuario"></div>
+          <div class="nome-usuario">Gabriel Patti</div>
+          <ul class="menu-suspenso">
+            <li><a href="">Perfil</a></li>
+            <li><a [routerLink]="['']" href="">Sair</a></li>
+          </ul>
+        </div>
+      </div>
     </mat-toolbar>
 
     <!-- Add Content Here -->

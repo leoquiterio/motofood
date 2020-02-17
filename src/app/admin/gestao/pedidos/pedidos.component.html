@@ -4,19 +4,84 @@
     <div class="wrapper-produto-pedido">
         <div class="produtos">
             <h4>Escolha o produto:</h4>
-            <ul>
-                <li><img src="../../../../assets/img/lanche.jpg" /></li>
-                <li><img src="../../../../assets/img/lanche.jpg" /></li>
-                <li><img src="../../../../assets/img/lanche.jpg" /></li>
-                <li><img src="../../../../assets/img/lanche.jpg" /></li>
-                <li><img src="../../../../assets/img/lanche.jpg" /></li>
-                <li><img src="../../../../assets/img/lanche.jpg" /></li>
-                <li><img src="../../../../assets/img/lanche.jpg" /></li>
-                <li><img src="../../../../assets/img/lanche.jpg" /></li>
-                <li><img src="../../../../assets/img/lanche.jpg" /></li>
-            </ul>
-        </div>        
+
+            <mat-tab-group>
+                <mat-tab label="Salgados">
+                    <ul>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                    </ul>
+                </mat-tab>
+                <mat-tab label="Doces">
+                    <ul>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                    </ul>
+                </mat-tab>
+                <mat-tab label="Refrigerantes">
+                    <ul>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                    </ul>
+                </mat-tab>
+                <mat-tab label="Outros">
+                    <ul>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                        <li><img src="../../../../assets/img/refrigerantes.jpg" /></li>
+                        <li><img src="../../../../assets/img/doces.jpg" /></li>
+                        <li><img src="../../../../assets/img/lanche.jpg" /></li>
+                    </ul>
+                </mat-tab>                
+            </mat-tab-group>
+
+        </div>
         <form action="" class="wrapper-form">
+            <h4>Endereço de entrega</h4>
+            <mat-form-field>
+                <input matInput placeholder="CEP" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Logradouro" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Número" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Bairro" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Complemento" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Observações" type="text">
+            </mat-form-field>
+
             <h4>Formas de pagamento</h4>
             <mat-form-field>
                 <mat-label>- Selecione -</mat-label>
