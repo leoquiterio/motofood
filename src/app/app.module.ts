@@ -43,7 +43,7 @@ import { FormaPagamentoComponent } from './admin/cadastro/forma-pagamento/forma-
 import { UsuariosComponent } from './admin/cadastro/usuarios/usuarios.component';
 import { RelFormaPagamentoComponent } from './admin/relatorios/forma-pagamento/forma-pagamento.component';
 import { RelUsuariosComponent } from './admin/relatorios/usuarios/usuarios.component';
-
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -94,7 +94,8 @@ import { RelUsuariosComponent } from './admin/relatorios/usuarios/usuarios.compo
     MatTabsModule,   
     AgmCoreModule.forRoot({
       apiKey: '',
-    })
+    }),
+    NgxMaskModule.forRoot({}),
   ],
   providers: [],
   bootstrap: [AppComponent]
