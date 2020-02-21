@@ -1,21 +1,24 @@
-.grid-container {
-  margin: 20px;
+.row {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  @include desktop-hd {
+    flex-direction: row;
+  }
+  
+  .coluna {
+    background: #fff;
+    box-shadow: 0 0 15px #dedede;
+    padding: 45px;
+    margin-bottom: 15px;
+
+    @include desktop {
+      width: calc(85%/2);
+    }
+  }
 }
 
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-}
-
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
-
-.dashboard-card-content {
-  text-align: center;
+mat-expansion-panel {
+  font-size: 13px !important;
 }

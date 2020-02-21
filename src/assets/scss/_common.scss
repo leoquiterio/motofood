@@ -20,3 +20,17 @@ table {
     align-items: center;
     justify-content: space-between;
 }
+
+.tabela {
+    color: #333;
+    tr.titulo {
+        td {
+            font-weight: bold;
+            background: #f1f1f1;
+        }
+    }
+    td {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
