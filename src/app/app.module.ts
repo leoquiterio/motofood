@@ -38,9 +38,9 @@ import { ProdutosComponent } from './admin/relatorios/produtos/produtos.componen
 import { MatTableModule } from '@angular/material/table';
 import { MatFileUploadModule } from 'angular-material-fileupload';
 import { AgmCoreModule } from '@agm/core';
-import {MatTabsModule} from '@angular/material/tabs';
-
-
+import { MatTabsModule } from '@angular/material/tabs';
+import { FormaPagamentoComponent } from './admin/cadastro/forma-pagamento/forma-pagamento.component';
+import { UsuariosComponent } from './admin/cadastro/usuarios/usuarios.component';
 
 
 @NgModule({
@@ -59,6 +59,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     EstabelecimentosComponent,
     EntregadoresComponent,
     ProdutosComponent,
+    FormaPagamentoComponent,
+    UsuariosComponent,
   ],
   imports: [
     BrowserModule,
@@ -85,7 +87,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatTableModule,    
     MatFileUploadModule,
     AgmCoreModule,
-    MatTabsModule,
+    MatTabsModule,   
     AgmCoreModule.forRoot({
       apiKey: '',
     })

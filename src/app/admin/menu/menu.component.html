@@ -8,9 +8,17 @@
       <a mat-list-item [routerLink]="['dashboard']">
         <mat-icon>view_week</mat-icon> Dashboard
       </a>
+      
       <a mat-list-item [routerLink]="['relatorio-estabelecimento']">
         <mat-icon>domain_disabled</mat-icon> Estabelecimentos
       </a>
+      <a mat-list-item [routerLink]="['forma-pagamento']">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mat-icon>payment</mat-icon> Formas de pagamento
+      </a>
+      <a mat-list-item [routerLink]="['usuarios']">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mat-icon>perm_identity</mat-icon> Usuários
+      </a>
+
       <a mat-list-item [routerLink]="['relatorio-entregador']">
         <mat-icon>person_pin</mat-icon> Entregadores
       </a>
@@ -33,7 +41,9 @@
       </button>
       <span>Delivery Já</span>
       <div class="menu-usuario">
-        <div class="notificacao-usuario">	<mat-icon>announcement</mat-icon></div>
+        <div class="notificacao-usuario">
+          <mat-icon>announcement</mat-icon>
+        </div>
         <div class="dados-usuario">
           <div class="foto-usuario"></div>
           <div class="nome-usuario">Gabriel Patti</div>

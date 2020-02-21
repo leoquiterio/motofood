@@ -1,6 +1,7 @@
 app-login {
   .wrapper-login {
-    // background-image: url("../../assets/img/background.jpg") no-repeat center center;
+    background-size: cover;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,6 +10,10 @@ app-login {
     form {
       width: 350px;
       display: block;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #999;
 
       .container {
         display: flex;
