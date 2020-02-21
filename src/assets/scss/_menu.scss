@@ -68,13 +68,19 @@
           border-radius: 50%;
         }
 
+        .nome-usuario {
+          font-size: 16px;
+        }
+
         .menu-suspenso {
           position: absolute;
           background: #fff;
-          box-shadow: 0 0 10px #333;
+          border: solid 1px #dedede;
           border-radius: 3px;
           display: none;
           width: 100px;
+          top: 15px;
+          
           li {
             list-style: none;
             a {

@@ -41,6 +41,8 @@ import { AgmCoreModule } from '@agm/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FormaPagamentoComponent } from './admin/cadastro/forma-pagamento/forma-pagamento.component';
 import { UsuariosComponent } from './admin/cadastro/usuarios/usuarios.component';
+import { RelFormaPagamentoComponent } from './admin/relatorios/forma-pagamento/forma-pagamento.component';
+import { RelUsuariosComponent } from './admin/relatorios/usuarios/usuarios.component';
 
 
 @NgModule({
@@ -61,6 +63,8 @@ import { UsuariosComponent } from './admin/cadastro/usuarios/usuarios.component'
     ProdutosComponent,
     FormaPagamentoComponent,
     UsuariosComponent,
+    RelFormaPagamentoComponent,
+    RelUsuariosComponent,
   ],
   imports: [
     BrowserModule,

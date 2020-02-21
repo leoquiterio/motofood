@@ -14,6 +14,8 @@ import { EntregadoresComponent } from './admin/relatorios/entregadores/entregado
 import { ProdutosComponent } from './admin/relatorios/produtos/produtos.component';
 import { FormaPagamentoComponent } from './admin/cadastro/forma-pagamento/forma-pagamento.component';
 import { UsuariosComponent } from './admin/cadastro/usuarios/usuarios.component';
+import { RelFormaPagamentoComponent } from './admin/relatorios/forma-pagamento/forma-pagamento.component';
+import { RelUsuariosComponent } from './admin/relatorios/usuarios/usuarios.component';
 
 
 const appRoutes: Routes = [
@@ -35,9 +37,11 @@ const appRoutes: Routes = [
         { path: 'relatorio-entregador', component: EntregadoresComponent },
         { path: 'relatorio-produto', component: ProdutosComponent },
 
+        { path: 'rel-forma-pagamento', component: RelFormaPagamentoComponent },
         { path: 'forma-pagamento', component: FormaPagamentoComponent },
 
-        { path: 'usuarios', component: UsuariosComponent },
+        { path: 'rel-usuarios', component: RelUsuariosComponent },
+        { path: 'cadastro-usuarios', component: UsuariosComponent },
 
 
         { path: '**', redirectTo: 'dashboard' },
