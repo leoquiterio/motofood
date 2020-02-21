@@ -38,12 +38,26 @@
       position: relative;
 
       .notificacao-usuario {
+        position: relative;
         margin-right: 20px;
         mat-icon {
           width: auto;
           font-size: 35px;
-          line-height: 60px;
+          line-height: 50px;
           cursor: pointer;
+        }
+
+        .menu-suspenso { 
+          padding: 3px 10px;
+          width: auto;
+          top: 45px;
+       }
+
+        &:hover {
+          cursor: pointer;
+          .menu-suspenso {
+            display: block;
+          }
         }
       }
 
@@ -71,30 +85,34 @@
         .nome-usuario {
           font-size: 16px;
         }
+      }
+    }
+  }
+}
 
-        .menu-suspenso {
-          position: absolute;
-          background: #fff;
-          border: solid 1px #dedede;
-          border-radius: 3px;
-          display: none;
-          width: 100px;
-          top: 15px;
-          
-          li {
-            list-style: none;
-            a {
-              font-size: 14px;
-              text-decoration: none;
-              color: #333;
-              font-weight: bold;
 
-              &:hover {
-                color: red;
-              }
-            }
-          }
-        }
+.menu-suspenso {
+  position: absolute;
+  background: #fff;
+  border: solid 1px #dedede;
+  border-radius: 3px;
+  display: none;
+  width: 100px;
+  top: 15px;
+  
+  font-size: 14px;
+  color: #333;
+
+  li {
+    list-style: none;
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+
+      &:hover {
+        color: red;
       }
     }
   }
